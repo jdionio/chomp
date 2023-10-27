@@ -17,7 +17,7 @@ draw_background(background)
 
 while running:
     for event in pygame.event.get():
-        print(event.type)
+        # print(event.type)
         if event.type == pygame.QUIT:
             running = False
         if event.type == pygame.KEYDOWN:
@@ -25,6 +25,10 @@ while running:
                 print('You pressed they key up key!')
             if event.key == pygame.K_DOWN:
                 print('You pressed the down key!')
+            if event.key == pygame.K_LEFT:
+                print('You pressed the left key!')
+            if event.key == pygame.K_RIGHT:
+                print('You pressed the right key!')
 
 
     # Draw background
@@ -32,6 +36,7 @@ while running:
 
     # Update display
     pygame.display.flip()
+
 
 
 pygame.QUIT
