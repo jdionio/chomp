@@ -10,3 +10,6 @@ MAX_SPEED = 3.0
 
 # Speed of player
 PLAYER_SPEED = 3.0
+
+# Number of lives
+NUM_LIVES = 3
